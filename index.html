@@ -1,0 +1,404 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Nurulain Afifah e-Portfolio | SDG 4 Quality Education</title> <style> :root{ --primary:#0a66c2; --secondary:#1e88e5; --accent:#42a5f5; --light:#eaf4ff; --dark:#0d2b45; --white:#ffffff; --gray:#f5f7fa; --shadow:0 8px 25px rgba(0,0,0,0.08); }
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ }
+html{
+ scroll-behavior:smooth;
+ }
+body{
+ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ background: var(--gray);
+ color:#333;
+ line-height:1.7;
+ }
+header{
+ background: linear-gradient(135deg,var(--primary),var(--secondary));
+ color:white;
+ padding:120px 20px 80px;
+ text-align:center;
+ }
+header h1{
+ font-size:3rem;
+ margin-bottom:10px;
+ }
+header p{
+ max-width:900px;
+ margin:auto;
+ font-size:1.1rem;
+ }
+nav{
+ position:sticky;
+ top:0;
+ z-index:1000;
+ background:white;
+ box-shadow:var(--shadow);
+ }
+.nav-container{
+ max-width:1200px;
+ margin:auto;
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ }
+nav a{
+ text-decoration:none;
+ color:var(--dark);
+ padding:18px 20px;
+ font-weight:600;
+ transition:0.3s;
+ }
+nav a:hover{
+ color:var(--primary);
+ }
+section{
+ padding:70px 20px;
+ }
+.container{
+ max-width:1200px;
+ margin:auto;
+ }
+.section-title{
+ text-align:center;
+ margin-bottom:40px;
+ color:var(--primary);
+ font-size:2rem;
+ }
+.info-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:20px;
+ margin-top:30px;
+ }
+.info-card{
+ background:white;
+ padding:25px;
+ border-radius:15px;
+ box-shadow:var(--shadow);
+ }
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+ gap:25px;
+ }
+.card{
+ background:white;
+ border-radius:18px;
+ overflow:hidden;
+ box-shadow:var(--shadow);
+ transition:0.3s;
+ }
+.card:hover{
+ transform:translateY(-5px);
+ }
+.card-content{
+ padding:22px;
+ }
+.card h3{
+ color:var(--primary);
+ margin-bottom:10px;
+ }
+.card p{
+ margin-bottom:12px;
+ }
+.video-container{
+ position:relative;
+ width:100%;
+ padding-bottom:56.25%;
+ height:0;
+ overflow:hidden;
+ }
+.video-container iframe{
+ position:absolute;
+ width:100%;
+ height:100%;
+ top:0;
+ left:0;
+ border:none;
+ }
+.reflection{
+ background:var(--light);
+ padding:15px;
+ border-radius:10px;
+ margin-top:10px;
+ }
+.project-section{
+ margin-bottom:30px;
+ }
+.github-btn{
+ display:inline-block;
+ margin-top:15px;
+ background:var(--primary);
+ color:white;
+ padding:10px 18px;
+ border-radius:8px;
+ text-decoration:none;
+ font-weight:600;
+ }
+.github-btn:hover{
+ background:var(--dark);
+ }
+.skills{
+ display:flex;
+ flex-wrap:wrap;
+ gap:12px;
+ justify-content:center;
+ }
+.skill{
+ background:white;
+ padding:12px 18px;
+ border-radius:30px;
+ box-shadow:var(--shadow);
+ font-weight:600;
+ }
+.resources{
+ background:white;
+ padding:30px;
+ border-radius:18px;
+ box-shadow:var(--shadow);
+ }
+.resources ul{
+ padding-left:20px;
+ }
+.resources li{
+ margin-bottom:10px;
+ }
+footer{
+ background:var(--dark);
+ color:white;
+ text-align:center;
+ padding:30px 20px;
+ }
+.sdg-banner{
+ background:var(--light);
+ border-left:6px solid var(--primary);
+ padding:20px;
+ border-radius:10px;
+ margin-top:25px;
+ }
+@media(max-width:768px){
+ header h1{
+ font-size:2.2rem;
+ }
+nav a{
+   padding:14px;
+   font-size:0.95rem;
+}
+
+.cards{
+   grid-template-columns:1fr;
+}
+}
+ </style>
+</head> <body> <header id="home"> <h1>NURULAIN AFIFAH BINTI AHMAD RIZAL</h1> <p><strong>Matric No:</strong> A210038 | <strong>Programme:</strong> Bachelor of Software Engineering</p> <p><strong>Instructor:</strong> Dr. Nazatul Aini Binti Abd Majid</p>
+<div class="sdg-banner">
+   <h2>SDG 4: Quality Education</h2>
+   <p>
+       I am a Software Engineering student with a strong interest in mobile application development and user-centered design.
+       Throughout this course, I have learned how to develop Android applications using Jetpack Compose, implement data persistence,
+       integrate APIs, and utilize mobile device sensors. This e-Portfolio showcases my learning journey from Lab 1 to Project 2.
+   </p>
+   <p style="margin-top:10px;">
+       SDG 4 focuses on Quality Education because technology can make learning more engaging, accessible, and effective for students while encouraging continuous self-improvement.
+   </p>
+</div>
+</header> <nav> <div class="nav-container"> <a href="#home">Home</a> <a href="#labs">Labs</a> <a href="#projects">Projects</a> <a href="#reflection">Reflection</a> <a href="#skills">Skills</a> <a href="#resources">Resources</a> </div> </nav> <section> <div class="container"> <div class="info-grid"> <div class="info-card"> <h3>Student</h3> <p>NURULAIN AFIFAH BINTI AHMAD RIZAL</p> </div>
+       <div class="info-card">
+           <h3>Matric Number</h3>
+           <p>A210038</p>
+       </div>
+
+       <div class="info-card">
+           <h3>Programme</h3>
+           <p>Bachelor of Software Engineering</p>
+       </div>
+
+       <div class="info-card">
+           <h3>Theme</h3>
+           <p>SDG 4 – Quality Education</p>
+       </div>
+   </div>
+</div>
+</section> <section id="labs"> <div class="container"> <h2 class="section-title">Laboratory Activities</h2>
+   <div class="cards">
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/AemeNby5WPg" title="Lab 1 UI Development" allowfullscreen></iframe>
+           </div>
+           <div class="card-content">
+               <h3>Lab 1 – UI Development</h3>
+               <p>Introduction to Jetpack Compose and Android UI design fundamentals.</p>
+               <div class="reflection">
+                   <strong>Reflection:</strong>
+                   <p>In this lab, I learned the fundamentals of Jetpack Compose and Android UI development. I explored how to build layouts using composable functions and organize interface components effectively. This lab provided the foundation for all subsequent mobile application development tasks.</p>
+               </div>
+           </div>
+       </article>
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/LSidBpypeWA" title="Lab 2 Interaction" allowfullscreen></iframe>
+           </div>
+           <div class="card-content">
+               <h3>Lab 2 – Interaction</h3>
+               <p>Learning state management and interactive user interfaces.</p>
+               <div class="reflection">
+                   <strong>Reflection:</strong>
+                   <p>This lab introduced state management and user interaction handling in Compose. I learned how applications respond dynamically to user actions such as button clicks and input fields. The experience improved my understanding of reactive UI development.</p>
+               </div>
+           </div>
+       </article>
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/BWr9qcPsIMo" title="Lab 3 Material Design" allowfullscreen></iframe>
+           </div>
+           <div class="card-content">
+               <h3>Lab 3 – Material Design</h3>
+               <p>Applying Material Design 3 principles and components.</p>
+               <div class="reflection">
+                   <strong>Reflection:</strong>
+                   <p>I learned how to apply Material Design principles to create modern and visually appealing user interfaces. By using Material 3 components, I was able to improve consistency, accessibility, and overall user experience within my application.</p>
+               </div>
+           </div>
+       </article>
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/N44FuLGo26k" title="Lab 4 Navigation" allowfullscreen></iframe>
+           </div>
+           <div class="card-content">
+               <h3>Lab 4 – Navigation</h3>
+               <p>Implementing multi-screen navigation using Navigation Compose.</p>
+               <div class="reflection">
+                   <strong>Reflection:</strong>
+                   <p>This lab focused on implementing navigation between multiple screens using Navigation Compose. I learned how to pass data between screens and manage navigation routes effectively. This knowledge became essential when developing larger applications.</p>
+               </div>
+           </div>
+       </article>
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/6qhZUtOksD4" title="Lab 5 Room Database" allowfullscreen></iframe>
+           </div>
+           <div class="card-content">
+               <h3>Lab 5 – Room Database</h3>
+               <p>Using Room Database for local data persistence.</p>
+               <div class="reflection">
+                   <strong>Reflection:</strong>
+                   <p>In this lab, I learned how to use Room Database for local data persistence. I implemented database entities, DAO operations, and repositories to store and retrieve user information. This enabled offline data access within the application.</p>
+               </div>
+           </div>
+       </article>
+
+   </div>
+</div>
+</section> <section id="projects"> <div class="container"> <h2 class="section-title">Projects</h2>
+   <div class="cards">
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/XjLxbp98t4Y" title="Project 1 StuQuest" allowfullscreen></iframe>
+           </div>
+
+           <div class="card-content">
+               <h3>Project 1 – StuQuest</h3>
+
+               <p><strong>Problem Statement:</strong></p>
+               <p>Many students struggle to stay motivated and organized while managing their studies. Traditional learning methods can become repetitive, causing reduced engagement and productivity. StuQuest addresses this issue by introducing a gamified learning environment that encourages consistent learning habits.</p>
+
+               <div class="reflection">
+                   <strong>Lessons Learned:</strong>
+                   <p>Through Project 1, I learned how to integrate multiple screens into a complete Android application using Navigation Compose and ViewModel. I also improved my understanding of state management and user experience design. This project strengthened my confidence in developing larger applications independently.</p>
+               </div>
+
+               <a href="#" class="github-btn">View on GitHub (Coming Soon)</a>
+           </div>
+       </article>
+
+       <article class="card">
+           <div class="video-container">
+               <iframe src="https://www.youtube.com/embed/EgIMPrMe7LA" title="Project 2 StuQuest" allowfullscreen></iframe>
+           </div>
+
+           <div class="card-content">
+               <h3>Project 2 – StuQuest</h3>
+
+               <p><strong>Problem Statement:</strong></p>
+               <p>Students often require additional motivation, progress tracking, and interactive learning tools to remain engaged in their studies. Project 2 enhances StuQuest by integrating local storage, cloud services, web APIs, and mobile hardware sensors to create a smarter and more engaging educational platform.</p>
+
+               <div class="reflection">
+                   <strong>Lessons Learned:</strong>
+                   <p>Project 2 significantly expanded my technical knowledge in Android development. I successfully implemented Room Database for local persistence, Firebase Firestore for cloud integration, Retrofit API for fetching motivational quotes from the internet, and Camera Sensor integration for capturing study evidence. These features helped me understand how modern mobile applications interact with both online services and device hardware.</p>
+               </div>
+
+               <a href="#" class="github-btn">View on GitHub (Coming Soon)</a>
+           </div>
+       </article>
+
+   </div>
+</div>
+</section> <section id="reflection"> <div class="container"> <h2 class="section-title">Reflection & Learning Journey</h2>
+   <div class="resources">
+       <p>
+           From Lab 1 to Project 2, I experienced significant growth in both technical and problem-solving skills.
+           I started by learning basic UI development and gradually progressed to navigation, local databases,
+           cloud services, API integration, and sensor implementation.
+       </p>
+
+       <br>
+
+       <p>
+           Throughout the projects, I faced various challenges such as debugging errors, managing application state,
+           and integrating multiple technologies within a single application. These experiences taught me the importance
+           of persistence, testing, and continuous learning.
+       </p>
+
+       <br>
+
+       <p>
+           Overall, this learning journey improved my confidence and ability to develop complete Android applications
+           using modern development practices. It also strengthened my appreciation for technology as a tool to support
+           SDG 4: Quality Education by creating engaging and accessible learning experiences.
+       </p>
+   </div>
+</div>
+</section> <section id="skills"> <div class="container"> <h2 class="section-title">Skills & Tech Stack</h2>
+   <div class="skills">
+       <div class="skill">Kotlin</div>
+       <div class="skill">Android Studio</div>
+       <div class="skill">Jetpack Compose</div>
+       <div class="skill">Material Design 3</div>
+       <div class="skill">Navigation Compose</div>
+       <div class="skill">ViewModel</div>
+       <div class="skill">State Management</div>
+       <div class="skill">Room Database</div>
+       <div class="skill">Firebase Firestore</div>
+       <div class="skill">Retrofit</div>
+       <div class="skill">REST API Integration</div>
+       <div class="skill">Camera Sensor</div>
+       <div class="skill">CameraX</div>
+       <div class="skill">Git</div>
+       <div class="skill">GitHub</div>
+       <div class="skill">Coroutines</div>
+       <div class="skill">MVVM Architecture</div>
+   </div>
+</div>
+</section> <section id="resources"> <div class="container"> <h2 class="section-title">Learning Resources</h2>
+   <div class="resources">
+       <ul>
+           <li>Android Developers Documentation</li>
+           <li>Jetpack Compose Documentation</li>
+           <li>Room Database Documentation</li>
+           <li>Firebase Firestore Documentation</li>
+           <li>Retrofit Documentation</li>
+           <li>Kotlin Documentation</li>
+           <li>CameraX Documentation</li>
+           <li>Material Design 3 Documentation</li>
+           <li>OpenAI ChatGPT (used as a learning assistant for understanding concepts, debugging, code explanation, and improving project documentation)</li>
+       </ul>
+   </div>
+</div>
+</section> <footer> <p><strong>NURULAIN AFIFAH BINTI AHMAD RIZAL</strong></p> <p>Matric No: A210038</p> <p>&copy; 2026 | SDG 4: Quality Education e-Portfolio</p> </footer> </body> </html> 
